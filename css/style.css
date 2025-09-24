@@ -428,43 +428,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-header h2,
 .section-header h3 {
     display: inline-block;
-    color: #AF9483;
+    color: #AF9483;                  /* 字体颜色改深一点，避免和浅色背景冲突 */
     font-size: 35px;
     text-transform: capitalize;
     text-align: left;
     font-weight: 700;
-    position: relative;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #AF9483;
+    padding: 8px 15px;               /* 增加内边距 */
+    background: #f7f7f7;             /* 👈 浅灰背景 */
+    border-radius: 4px;              /* 四角圆润一些 */
+    border-bottom: none;             /* 去掉下划线 */
 }
+
 
 .section-header h2::before,
-.section-header h3::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    bottom: 0px;
-    right: 0;
-    border-top: 10px solid;
-    border-right: 10px solid;
-    border-color: transparent #AF9483;
-}
+.section-header h3::before
 
 .section-header h2::after,
-.section-header h3::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    bottom: 0px;
-    left: 0;
-    border-top: 10px solid;
-    border-left: 10px solid;
-    border-color: transparent #AF9483;
-}
+.section-header h3::after
 
 .section-header p {
     text-align: left;
@@ -484,7 +464,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* ============================= */
 
 .about {
-    padding: 60px 0 15px 0;
+    padding: 15px 0 10px 0;
     position: relative;
 }
 
@@ -570,6 +550,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     padding: 0;
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .experience .section-header p {
@@ -628,20 +609,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 .experience .exp-company {
     margin-bottom: 0;
     color: #AF9483;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
 }
 
 .experience .exp-designation {
     margin-bottom: 10px;
-    color: #999999;
+    color: #919191;
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
 }
 
 .experience .exp-detail {
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 
@@ -651,20 +631,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* ============================= */
 
 .services .single-service {
-    text-align: center;
+    text-align: left;              /* 文本左对齐 */
     font-weight: 300;
-    margin: 15px;               /* 块间距小 */
-    padding: 15px;             /* 内边距小 */
+    margin: 5px;
+    padding: 10px 15px;            /* 横向空间大一点 */
     background: #e9ecef;
-    border-radius: 5px;       /* 圆角 */
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1 / 1;       /* 正方形 */
+    display: flex;                 /* 横向布局 */
+    align-items: center;           /* 垂直居中 */
+    justify-content: flex-start;   /* 左对齐 */
+    height: 50px;                  /* 扁长矩形 */
     transition: transform 0.2s, box-shadow 0.2s;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .services .single-service:hover {
@@ -673,20 +652,35 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .services .single-service .service-icon {
-    font-size: 40px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 28px;
+    width: 50px;                   /* 给图标固定宽度 */
+    text-align: center;            /* 居中对齐 */
     color: white;
-    margin-bottom: 5px;
+    margin-right: 10px;            /* 图标和文字的间距 */
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .services .single-service h4 {
-    font-size: 15px;
+    font-size: 13px;
     margin: 0;
 }
 
-
+.circle-icon {
+    width: 30px;
+    height: 25px;
+    border-radius: 10%;       /* 变圆 */
+    overflow: hidden;         /* 裁剪成圆 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;         /* 球的背景色，可以改成 #eee */
+}
+.circle-icon i {
+    font-size: 100px;          /* 控制图标大小 */
+    line-height: 1;
+}
 
 
 
@@ -788,6 +782,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .portfolio .portfolio-item {
+    padding: 10px 15px;
     position: relative;
     height: 250px;
     overflow: hidden;

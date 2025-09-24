@@ -19,6 +19,10 @@
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -30,17 +34,22 @@
             <div class="container">
 
                 <div class="logo pull-left">
-                    <h1><a href="index.html">MyFolio</a></h1>
+                    <h1><a href="index.html">:)</a></h1>
                 </div>
 
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#educations">Educations</a></li>
+                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact me</a></li>
-                        <li><a href="#resume">Download Resume</a></li>
+                        <li class="menu-has-children"><a href="">Download Resume</a>
+                            <ul>
+                                <li><a href="files/en_resume.pdf" target="_blank download="Ziyi_Wang_Resume_EN.pdf">English</a></li>
+                                <li><a href="files/jp_resume.pdf" target="_blank download="Ziyi_Wang_Resume_JP.pdf">Japanese</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
 
@@ -65,16 +74,17 @@
                         <header class="section-header">
                             <h2>About Me</h2>
                         </header><!-- change the format of text and appearence!!-->
-                        <h3>Ziyi Wang</h3>
-                        <h4><strong>Profession:</strong> mwowmomeow</h4>
+                        <h2>Ziyi Wang</h2>
+                        <h4><strong>Hobbies:</strong> Drawing, Cooking, Programming, Hand-crafting, Playing indie games, Watching cartoons</h4>
+                        <h4><strong>Favorite Object Show:</strong> ONE</h4>
                         <p>
-                            1
+                            Hi! I’m Ziyi Wang, and my friends call me Zoey. I hold bachelor’s degrees in Software Engineering and Information Science.
                         </p>
                         <p>
-                            2
+                            Since I was a kid, I have been passionate about computers and programming, which led me to choose an IT-related major in university. Thanks to my English skills, I made many international friends during my two years of study abroad in Japan, and I also acquired business-level Japanese language skills proficiency. I am looking for an opportunity where I can continue learning and make contributions to teamwork.
                         </p>
                         <p>
-                            3
+                            Scroll down or use the navigator to learn more about me! :D
                         </p>
                     </div>
                 </div>
@@ -82,6 +92,38 @@
         </div>
         <!-- About Me End-->
         
+        <!-- Educations Start -->
+        <div class="experience" id="educations">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Educations</h3>
+                </header>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="exp-column">
+                            <p class="exp-date">Sep 2023 <span>to</span> Sep 2025</p>
+                            <h4 class="exp-company">Ritsumeikan University, Japan</h4>
+                            <h4 class="exp-designation">Bachelor's degree in <strong>Information Science</strong></h4>
+                            <p class="exp-detail">
+                                2-year program where I study as a regular student.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="exp-column">
+                            <p class="exp-date">Sep 2021 <span>to</span> Sep 2023</p>
+                            <h4 class="exp-company">Dalian University of Technology, China</h4>
+                            <h4 class="exp-designation">Bachelor's degree in <strong>Software Engineering</strong></h4>
+                            <p class="exp-detail">
+                                -
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Educations End -->
+
         <!-- Skills Start -->
         <div class="services" id="skills">
             <div class="container">
@@ -92,166 +134,169 @@
                 <div class="skill-category">
                     <h4>Programming</h4>
                     <div class="row no-gutters">
-                        <div class="col-sm-3 col-md-2">
+                        <div class="col-3 col-sm-3 col-md-2">
                             <div class="single-service">
                                 <span></span>
-                                <div class="service-icon"><i class="fa fa-television"></i></div>
-                                <h4><a href="#">Web Design</a></h4>
+                                <div class="service-icon"><i class="devicon-c-plain colored"></i></div>
+                                <h4>C</h4>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-2">
+                        <div class="col-3 col-sm-3 col-md-2">
                             <div class="single-service">
                                 <span></span>
-                                <div class="service-icon"> <i class="fa fa-laptop"></i> </div>
-                                <h4><a href="#">Web Development</a></h4>
+                                <div class="service-icon"> <i class="devicon-cplusplus-plain colored"></i> </div>
+                                <h4>C++</h4>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-2">
+                        <div class="col-3 col-sm-3 col-md-2">
                             <div class="single-service">
                                 <span></span>
-                                <div class="service-icon"> <i class="fa fa-android"></i> </div>
-                                <h4><a href="#">Apps Development</a></h4>
+                                <div class="service-icon"> <i class="devicon-csharp-plain colored"></i> </div>
+                                <h4>C#</h4>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-2">
+                        <div class="col-3 col-sm-3 col-md-2">
                             <div class="single-service">
                                 <span></span>
-                                <div class="service-icon"> <i class="fa fa-envelope-o"></i> </div>
-                                <h4><a href="#">Email List Building</a></h4>
+                                <div class="service-icon"> <i class="devicon-python-plain colored"></i> </div>
+                                <h4>Python</h4>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-2">
+                        <div class="col-3 col-sm-3 col-md-2">
                             <div class="single-service">
                                 <span></span>
-                                <div class="service-icon"> <i class="fa fa-signal"></i> </div>
-                                <h4><a href="#">Custom Analytics</a></h4>
+                                <div class="service-icon"> <i class="devicon-matlab-plain colored"></i> </div>
+                                <h4>MATLAB</h4>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-2">
+                        <div class="col-3 col-sm-3 col-md-2">
                             <div class="single-service">
                                 <span></span>
-                                <div class="service-icon"> <i class="fa fa-globe"></i> </div>
-                                <h4><a href="#">Online Marketing</a></h4>
+                                <div class="service-icon"> <i class="devicon-html5-plain colored"></i> </div>
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-2">
+                            <div class="single-service">
+                                <span></span>
+                                <div class="service-icon"> <i class="devicon-css3-plain colored"></i> </div>
+                                <h4>CSS</h4>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-2">
+                            <div class="single-service">
+                                <span></span>
+                                <div class="service-icon"> <i class="devicon-godot-plain colored"></i> </div>
+                                <h4>GDscript</h4>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-2">
+                            <div class="single-service">
+                                <span></span>
+                                <div class="service-icon"> <i class="devicon-mysql-plain colored"></i> </div>
+                                <h4>MySQL</h4>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-2">
+                            <div class="single-service">
+                                <span></span>
+                                <div class="service-icon"> <i class="devicon-arduino-plain colored"></i> </div>
+                                <h4>Arduino</h4>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-2">
+                            <div class="single-service">
+                                <span></span>
+                                <div class="service-icon"> <img src="img/scratch-cat-seeklogo.svg" 
+             alt="Scratch" width="30"> </div>
+                                <h4>Scratch</h4>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h4>Language</h4>
+                    <h4>Languages</h4>
                     <div class="row no-gutters">
-                        <div class="col-sm-3 col-md-2">
+                        <div class="col-3 col-sm-3 col-md-2">
                             <div class="single-service">
                                 <span></span>
-                                <div class="service-icon"><i class="fa fa-television"></i></div>
-                                <h4><a href="#">Web Design</a></h4>
+                                <div class="service-icon circle-icon"><i class="fi fi-cn"></i></div>
+                                <h4>Chinese - Native</h4>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-2">
+                        <div class="col-3 col-sm-3 col-md-2">
                             <div class="single-service">
                                 <span></span>
-                                <div class="service-icon"> <i class="fa fa-laptop"></i> </div>
-                                <h4><a href="#">Web Development</a></h4>
+                                <div class="service-icon circle-icon"> <i class="fi fi-jp"></i> </div>
+                                <h4>Japanese - N2</h4>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-2">
+                        <div class="col-3 col-sm-3 col-md-2">
                             <div class="single-service">
                                 <span></span>
-                                <div class="service-icon"> <i class="fa fa-android"></i> </div>
-                                <h4><a href="#">Apps Development</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="single-service">
-                                <span></span>
-                                <div class="service-icon"> <i class="fa fa-envelope-o"></i> </div>
-                                <h4><a href="#">Email List Building</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="single-service">
-                                <span></span>
-                                <div class="service-icon"> <i class="fa fa-signal"></i> </div>
-                                <h4><a href="#">Custom Analytics</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="single-service">
-                                <span></span>
-                                <div class="service-icon"> <i class="fa fa-globe"></i> </div>
-                                <h4><a href="#">Online Marketing</a></h4>
+                                <div class="service-icon circle-icon"> <i class="fi fi-us"></i> </div>
+                                <h4>English - Advanced</h4>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="skill-category">
+                    <h4>Others</h4>
+                    <div class="row no-gutters">
+                        <div class="col-3 col-sm-3 col-md-2">
+                            <div class="single-service">
+                                <span></span>
+                                <div class="service-icon"><i class="devicon-photoshop-plain colored"></i></div>
+                                <h4>Photoshop</h4>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-2">
+                            <div class="single-service">
+                                <span></span>
+                                <div class="service-icon"> <i class="devicon-premierepro-plain colored"></i> </div>
+                                <h4>Premiere Pro</h4>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-2">
+                            <div class="single-service">
+                                <span></span>
+                                <div class="service-icon"> <i class="devicon-aftereffects-plain colored"></i> </div>
+                                <h4>After Effects</h4>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-3 col-md-2">
+                            <div class="single-service">
+                                <span></span>
+                                <div class="service-icon"> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftoffice.svg" 
+             alt="Microsoft Office" width="30"> </div>
+                                <h4>Office softwares</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- Skills End -->
 
-        <!-- Educations Start -->
-        <div class="experience" id="educations">
-            <div class="container">
-                <header class="section-header">
-                    <h3>Educations</h3>
-                    <p>
-                        Morbi lacinia malesuada risus vel pellentesque. Cras malesuada, felis nec dignissim lobortis, nisl nulla venenatis arcu, et commodo lacus nulla sit amet libero.
-                    </p>
-                </header>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="exp-column">
-                            <p class="exp-date">01-Jul-2017 <span>to</span> 01-Jan-2020</p>
-                            <h4 class="exp-company">Soft Agency, San Francisco, CA</h4>
-                            <h4 class="exp-designation">Web Developer</h4>
-                            <p class="exp-detail">
-                                Curabitur porttitor, dolor sed tempus fringilla, odio odio pellentesque sem, in elementum sem nisl non ipsum. Suspendisse laoreet ante vel libero convallis, sit amet hendrerit massa mattis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="exp-column">
-                            <p class="exp-date">01-Jan-2015 <span>to</span> 25-Jun-2017</p>
-                            <h4 class="exp-company">Decent Soft Solution, Lyndhurst, NJ</h4>
-                            <h4 class="exp-designation">Web Developer</h4>
-                            <p class="exp-detail">
-                                Curabitur porttitor, dolor sed tempus fringilla, odio odio pellentesque sem, in elementum sem nisl non ipsum. Suspendisse laoreet ante vel libero convallis, sit amet hendrerit massa mattis.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Educations End -->
 
         <!-- Projects Start -->
         <div class="portfolio" id="projects">
             <div class="container">
                 <header class="section-header">
                     <h3 class="section-title">My Projects</h3>
-                    <p>
-                        Morbi lacinia malesuada risus vel pellentesque. Cras malesuada, felis nec dignissim lobortis, nisl nulla venenatis arcu, et commodo lacus nulla sit amet libero.
-                    </p>
                 </header>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".web-des">Web Design</li>
-                            <li data-filter=".web-dev">Web Development</li>
-                            <li data-filter=".app-dev">App Development</li>
-                        </ul>
-                    </div>
-                </div>
-
+                <p>Click the link icon to access the projects in GitHub!</p>
                 <div class="row portfolio-container">
                     <div class="col-lg-4 col-md-6 portfolio-item web-des">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="img/portfolio-1.jpg" class="img-fluid" alt="">
-                                <a href="img/portfolio-1.jpg" data-lightbox="portfolio" data-title="Curabitur semper erat" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                <h4 class="portfolio-title">Curabitur semper erat <span>Web Design</span></h4>
+                                <img src="img/alien-puffs.jpg" class="img-fluid" alt="">
+                                <a href="img/alien-puffs.jpg" data-lightbox="portfolio" data-title="Alien Puffs" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                <a href="https://github.com/63L17/Alien-Puffs-Public" target="_blank class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                <h4 class="portfolio-title">Alien Puffs <span>Game</span></h4>
                             </figure>
                         </div>
                     </div>
@@ -259,54 +304,10 @@
                     <div class="col-lg-4 col-md-6 portfolio-item web-des">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="img/portfolio-2.jpg" class="img-fluid" alt="">
-                                <a href="img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Maecenas a tempus tortor" title="Preview"><i class="fa fa-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                <h4 class="portfolio-title">Maecenas a tempus tortor <span>Web Design</span></h4>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item web-dev">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-3.jpg" class="img-fluid" alt="">
-                                <a href="img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Aliquam id sapien lorem" title="Preview"><i class="fa fa-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                <h4 class="portfolio-title">Aliquam id sapien lorem <span>Web Development</span></h4>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item web-dev">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-4.jpg" class="img-fluid" alt="">
-                                <a href="img/portfolio-4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Quisque lectus mauris" title="Preview"><i class="fa fa-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                <h4 class="portfolio-title">Quisque lectus mauris <span>Web Development</span></h4>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item app-dev">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-5.jpg" class="img-fluid" alt="">
-                                <a href="img/portfolio-5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Interdum et malesuada" title="Preview"><i class="fa fa-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                <h4 class="portfolio-title">Interdum et malesuada <span>Apps Development</span></h4>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item app-dev">
-                        <div class="portfolio-wrap">
-                            <figure>
-                                <img src="img/portfolio-6.jpg" class="img-fluid" alt="">
-                                <a href="img/portfolio-6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Pellentesque lacus" title="Preview"><i class="fa fa-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                <h4 class="portfolio-title">Pellentesque lacus <span>Apps Development</span></h4>
+                                <img src="img/transient-imaging.gif" class="img-fluid" alt="">
+                                <a href="img/transient-imaging.gif" class="link-preview" data-lightbox="portfolio" data-title="Dual Transient Imaging" title="Preview"><i class="fa fa-eye"></i></a>
+                                <a href="https://github.com/63L17/Dual-Transient-Imaging" target="_blank class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                <h4 class="portfolio-title">Dual Transient Imaging <span>Computer Imaging</span></h4>
                             </figure>
                         </div>
                     </div>
@@ -321,7 +322,7 @@
                 <div class="section-header">
                     <h3>Contact Me</h3>
                     <p>
-                        Morbi lacinia malesuada risus vel pellentesque. Cras malesuada, felis nec dignissim lobortis, nisl nulla venenatis arcu, et commodo lacus nulla sit amet libero.
+                        Feel free to send me messages!
                     </p>
                 </div>
 
@@ -329,10 +330,8 @@
                     <div class="col-md-6">
                         <div class="contact-info">
                             <p><i class="fa fa-user"></i>Ziyi Wang</p>
-                            <p><i class="fa fa-tag"></i>Web Designer & Developer</p>
-                            <p><i class="fa fa-map-marker"></i>123 Soft Street, Los Angeles, CA, USA</p>
                             <p><i class="fa fa-envelope"></i><a href="mailto:wyanzuu@gmail.com"> wyanzuu@gmail.com</a></p>
-                            <p><i class="fa fa-phone"></i><a href="tel:+1234567890">+123-456-7890</a></p>
+                            <p><i class="fa fa-phone"></i><a href="tel:+818063375156">+81 80-6337-5156</a></p>
                             <div class="social">
                                 <a href="https://github.com/63L17" target="_blank"><i class="fa fa-github"></i></a>
                                 <a href="https://www.linkedin.com/in/ziyi-wang-900960354/" target="_blank"><i class="fa fa-linkedin"></i></a>
